@@ -91,6 +91,7 @@
          ...
       }
   </code></li>
+  <li>Recursion is OK!</li>
 </div>
 
 <div class="slide">
@@ -138,6 +139,22 @@
 </div>
 
 <div class="slide">
+<h1>Tracery Pro Tip</h1>
+<ul>
+  <li>Pick multiple related words at the same time as outcomes of a rule, then expand that rule to build up a consistent vocabulary.<br/>
+    <code>
+      { "choice" : [<br/>
+      "[person:Elsa][pronoun:she][possessive:her][power:freezes]",<br/>
+      "[person:Sven][pronoun:he][possessive:his][power:smells]",<br/>
+      "[person:Iron Giant][pronoun:it][possessive:its][power:regenerates]",<br/>
+      ] }      
+    </code>
+  </li>
+  <li>Sadly, you can't directly create a rule that's a choice rule... but you can get the same effect indirectly.</li>
+</ul>
+</div>
+  
+<div class="slide">
 <h1>A Brief Aside Into Theory of Computation</h1>
 <ul>
   <li>Where does Tracery fit into the Chomsky hierarchy?  What classes of languages can in produce?</li>
@@ -166,7 +183,7 @@
   <li>JSON, like SVG, is just text...</li>
   <li>Tracery can generate text...</li>
   <li>Can Tracery generate Tracery?</li>
-  <li>Yes! But it doesn't have escaping built-in, so you have to add that as a modifier function.
+  <li>Yes! But Tracery doesn't have escaping built-in, so you have to add that as a modifier function.
     <ul><li>Need to handle #, [, ], &quot;</li></ul></li>
   <li><a href="http://artbot.combinatorium.com/">Mark's MetaArtbot: A Tracery Bot that makes Tracery Artbots</a>
 </ul>
